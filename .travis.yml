@@ -8,4 +8,5 @@ branches:
 env:
   global:
     - MAVEN_OPTS="-XX:MaxPermSize=512m -Xmx2g"
-script: mvn clean install package
+    - CODECOV_TOKEN="42dcd7d6-bfa3-4b19-ae9b-6547736bad20"
+script: ./build.sh
